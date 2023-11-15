@@ -1,0 +1,61 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f8f9fa; /* İstediğiniz arkaplan rengini kullanabilirsiniz */
+}
+
+.main img {
+    width: 100%; /* Resmi tam genişliğe sığacak şekilde ayarlar */
+    height: 100%;
+    z-index: 1; /* Resmin butonun üzerine gelmesini sağlar */
+}
+
+.main h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; /* Başlığın resmin üzerine gelmesini sağlar */
+}
+
+.main button {
+    position: absolute;
+    top: 70%; /* İstediğiniz yüksekliği ayarlayabilirsiniz */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2; /* Butonun resmin üzerine gelmesini sağlar */
+    color: black;
+    background-color: #fff;
+}
+
+.main button:hover {
+    color: #fff;
+    background-color: black;
+}
+.main button {
+    border: none;
+}
+
+h1 {
+    color: #fff;
+}
+
+.col-2 img {
+    height: 120px;
+}
+#details {
+    opacity: 0;
+}
+#loading {
+    display: none;
+}
+
+/* Footer Stilleri */
